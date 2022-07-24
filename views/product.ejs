@@ -1,0 +1,32 @@
+<%- include("partials/header") -%>
+
+<!-- <div class="content"> -->
+
+<div class="product-card">
+  <div class="card" style="width: 100%;">
+    <img class="card-img-top" src="../public/uploads/<%=product.productImage%>" alt="Product Image">
+    <div class="card-body">
+      <h1><%=product.name%></h1>
+      <p><b>Rating(1-5):</b> <%=product.rating%></p>
+      <p><b>Category:</b> <%=product.category%></p>
+      <p><b>About:</b> <%=product.productAbout%></p>
+      <p><b>Owner's Name:</b> <%=product.sellerName%></p>
+      <p><b>Owner's Contact Number:</b> <%=product.sellerContactNumber%></p>
+      <p><b>Owner's Email:</b> <%=product.sellerEmail%></p>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="home-form-div product-card-body">
+  <img class="img" src="../public/uploads/<%=product.productImage%>" alt="Product Image">
+  <h1><%=product.name%></h1>
+  <p><b>Rating(1-5):</b> <%=product.rating%></p>
+  <p><b>Category:</b> <%=product.category%></p>
+  <p><b>About:</b> <%=product.productAbout%></p>
+  <p><b>Owner's Name:</b> <%=product.sellerName%></p>
+  <p><b>Owner's Contact Number:</b> <%=product.sellerContactNumber%></p>
+  <p><b>Owner's Email:</b> <%=product.sellerEmail%></p>
+</div> -->
+
+<!-- </div> -->
+<%- include("partials/footer") -%>

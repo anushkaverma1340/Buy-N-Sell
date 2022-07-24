@@ -1,0 +1,18 @@
+<%- include("partials/header") -%>
+<div class="container">
+  <div class="row">
+    <% productsList.forEach(function(product){ %>
+      <div class="card col-md-4 products-card-div">
+        <form action="<%=route%>" method="post">
+          <img class="card-img-top" src="../public/uploads/<%=product.productImage%>" alt="Product Image">
+          <div class="card-body">
+            <h4><%=product.name%></h4>
+            <p><b>Rating(1-5):</b> <%=product.rating%></p>
+            <button type="submit" name="productPageButton" value="<%=product._id%>" class="btn btn-dark">Open</button>
+          </div>
+        </form>
+      </div>
+    <% }); %>
+  </div>
+</div>
+<%- include("partials/footer") -%>

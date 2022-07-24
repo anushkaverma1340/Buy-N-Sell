@@ -1,0 +1,16 @@
+<%- include("partials/header") -%>
+
+<div class="content">
+
+<div class="home-form-div">
+  <h1><%=thisUser.name%></h1>
+  <img class="img" src="../public/uploads/<%=thisUser.profileImage%>" alt="profile-image">
+  <h3>(Username: <%=thisUser.username%>)</h3><br>
+  <p><b>Contact Number:</b> <%=thisUser.contactNumber%></p>
+  <p><b>Email:</b> <%=thisUser.email%></p>
+  <a class="input btn btn-outline-dark" href="/products-to-sell"><i class="fa fa-share"></i> Products to Sell</a><br>
+  <a class="input btn btn-dark" href="/upload-product"><i class="fa fa-upload"></i> Upload Product</a>
+</div>
+
+</div>
+<%- include("partials/footer") -%>

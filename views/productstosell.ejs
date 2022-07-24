@@ -1,0 +1,24 @@
+<%- include("partials/header") -%>
+
+<div class="container">
+  <div class="row">
+    <% productsToSell.forEach(function(product){ %>
+      <div class="card col-md-4 products-card-div">
+        <form action="/products-to-sell" method="post">
+          <img class="card-img-top" src="../public/uploads/<%=product.productImage%>" alt="Product Image">
+          <div class="card-body products-card-body">
+            <p><b>Name</b>: <%=product.name%></p>
+            <p><b>Rating(1-5)</b>: <%=product.rating%></p>
+            <p><b>Category</b>: <%=product.category%></p>
+            <p><b>About</b>: <%=product.productAbout%></p>
+            <button class="btn btn-outline-dark" type="submit" name="soldButton" value="<%=product._id%>"><i class="fa fa-check-circle"></i>  Sold</button>
+          </div>
+        </form>
+      </div>
+    <% }); %>
+  </div>
+</div>
+
+<a class="input btn btn-dark" href="/upload-product"><i class="fa fa-upload"></i> Upload Product</a>
+
+<%- include("partials/footer") -%>

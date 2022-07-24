@@ -1,0 +1,63 @@
+html {
+  height:100%;
+}
+
+body{
+  height:100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.body-div{
+  height:100%;
+}
+
+.header{
+  background-color: black;
+  padding: 0 auto;
+}
+
+.logo{
+  font-family: 'Titan One', cursive;
+  font-size: 3rem;
+  padding:5px;
+  margin: auto 10px;
+}
+
+.navtext {
+  color: white;
+}
+
+.title-section{
+  background-color: black;
+  color: #eeeeee;
+  padding: 100px;
+}
+
+.input{
+  margin:5px;
+  border-radius: 5px;
+  width:200px;
+}
+
+.categories{
+  margin: auto 50px;
+}
+
+.categories-image {
+  width:100px;
+}
+
+.categories-cards {
+  margin: 50px auto;
+}
+
+.main-footer{
+  background-color: black;
+  color: white;
+  border-bottom: 0;
+  display: block;
+}
